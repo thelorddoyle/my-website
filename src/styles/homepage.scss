@@ -1,0 +1,164 @@
+@import './general.scss';
+
+.home-page-container {
+
+    padding: 5%;
+
+    .tldr {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content:flex-start;
+        align-items:stretch;
+        align-content:stretch;
+    
+        h1 {
+            padding-right: 20px;
+            font-weight: 800;
+        }
+    
+        p span {
+            color: $font-highlight;
+        }
+    }
+
+    .quick-links {
+        padding-top: 2%;
+
+        h1 {
+            font-weight: 800;
+            padding-bottom: 20px;
+        }
+
+        .quick-links-bar {
+            display: flex;
+            flex-direction: row;
+
+            .quick-links-resume {
+                display: flex;
+                flex-direction: column;
+                padding-right: 20px;
+
+                .resume-image {
+                    max-width: 75px;
+                }
+            }
+
+            a {
+                color: $font-colour-main;
+
+                &:hover {
+                    color: $font-highlight;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .latest-articles {
+        padding-top: 5%;
+
+        h1 {
+            font-weight: 800;
+        }
+        
+        .article {
+            position: relative;
+            width: auto;
+            padding: 1em 1.5em;
+            margin: 2em auto;
+            margin-left: 10px;
+            color: #333;
+            background: white;
+            overflow: hidden;
+            box-shadow: grey -10px 10px;
+          }
+          
+          .article:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-width: 0 40px 40px 0;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) white white;
+            background: url(../images/background.png);
+            -webkit-box-shadow: 0 5px 5px grey, -5px 5px 5px grey;
+            -moz-box-shadow: 0 5px 5px grey, -5px 5px 5px grey;
+            box-shadow: 0 5px 5px grey, -5px 5px 5px grey;
+            /* Firefox 3.0 damage limitation */
+            display: block; width: 0;
+          }
+
+            .article-header-line {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+
+                .green-dot {
+                    height: 10px;
+                    width: 10px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-top: 10px;
+                    background-color: $font-highlight;
+                    border-radius: 50%;
+                    display: inline-block;
+                  }
+
+                  .red-dot {
+                    height: 10px;
+                    width: 10px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-top: 10px;
+                    background-color: red;
+                    border-radius: 50%;
+                    display: inline-block;
+                  }
+            }
+
+            .article-description {
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    max-width: 300px;
+                    margin-bottom: 10px;
+                    align-self: flex-start;
+                }
+
+                p {
+                    padding-left: 30px;
+                }
+            }
+
+            .article-button-section {
+                margin: 10px 5px;
+                button {
+                    margin-left: 30px;
+                    font-family: 'Source Code Pro', monospace;
+                    line-height: 1.5;
+                    font-size: 20px;
+                    padding: 10px 20px;
+                    color: white;
+                    background-color: #333;
+                    border: none;
+                    -webkit-box-shadow: 0 5px grey, -5px 5px grey;
+                    -moz-box-shadow: 0 5px grey, -5px 5px grey;
+                    box-shadow: 0 5px grey, -5px 5px grey;
+
+                    &:hover {
+                        background-color: $font-highlight;
+                        cursor: pointer;
+                    }
+                }
+            }
+    }
+
+    hr.dotted-line {
+        color: rgba(255, 255, 255, 0);
+        border-top: 3px dashed white;
+        margin: 5% 0 0 0;
+    }
+}

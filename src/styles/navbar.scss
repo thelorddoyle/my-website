@@ -1,0 +1,30 @@
+@import './general.scss';
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 5%;
+
+    .logo {
+        max-width: 5rem;
+        cursor: pointer;
+    }
+
+    .links {
+        display: flex;
+        justify-content: flex-end;
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            li {
+                padding-left: 5vw;
+                &:hover {
+                    cursor: pointer;
+                    color: $font-highlight;
+                }
+            }
+        }
+    }
+
+}

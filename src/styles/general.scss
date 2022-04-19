@@ -46,7 +46,7 @@ $font-colour-main: #ffffff;
 $font-highlight: #21deab;
 
 body {
-    background: url(../images/background.png);
+    background-color: rgb(31, 31, 31);
     background-size: 65%;
     font-family: 'Source Code Pro', monospace;
     line-height: 1.5;
@@ -54,3 +54,18 @@ body {
     box-sizing: border-box !important;
     color: $font-colour-main;
 }
+
+.grain {
+    pointer-events: none;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 1;
+    display: block;
+    background-image: url(../images/noise.gif);
+    background-position: 50% 50%;
+    background-size: auto;
+    opacity: 0.02;
+    }

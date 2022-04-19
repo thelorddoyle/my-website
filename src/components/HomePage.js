@@ -18,7 +18,7 @@ export const HomePage = () => {
                     <div className='article-header-line'>
                         <h1>Top 5 Lessons from Reading 'The Pragmatic Programmer'</h1>
                         <span className='green-dot'></span>
-                        <p>Books</p>
+                        <p>Category: Books</p>
                     </div>
                     <div className='article-description'>
                         <img src={pragamticProgrammer} alt="" />
@@ -37,7 +37,7 @@ export const HomePage = () => {
                     <div className='article-header-line'>
                         <h1>How To Get Started With GraphQL</h1>
                         <span className='red-dot'></span>
-                        <p>Don't Read The F*&king Manual</p>
+                        <p>Category: Don't Read The F*&king Manual</p>
                     </div>
                     <div className='article-description'>
                         <img src={graphQL} alt="" />
@@ -60,9 +60,6 @@ export const HomePage = () => {
                     </div>
                 </div>
             </div>
-
-            <hr className='dotted-line'/>
-
         </div>
     )
 }

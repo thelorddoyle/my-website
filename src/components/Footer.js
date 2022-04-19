@@ -52,6 +52,9 @@ export const Footer = () => {
 
     return(
         <div className="footer-section">
+
+            <hr className='dotted-line'/>
+
             <h1>How To Contact Me</h1>
             <div className="socials">
                 <img src={email} alt="" onMouseEnter={changeEmailColour} onMouseLeave={changeEmailColour}/>
@@ -59,7 +62,7 @@ export const Footer = () => {
                 <img src={github} alt="" onMouseEnter={changeGithubColour} onMouseLeave={changeGithubColour}/>
                 <img src={twitter} alt="" onMouseEnter={changeTwitterColour} onMouseLeave={changeTwitterColour}/>
             </div>
-            <h1>Copyright Daniel Lord-Doyle © 2022</h1>
+            <h1 className='copyright'>Copyright Daniel Lord-Doyle © 2022</h1>
         </div>
     )
 }

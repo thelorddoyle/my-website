@@ -2,6 +2,7 @@ import '../styles/navbar.scss';
 import logoWhite from '../images/DLlogo.png'
 import logoGreen from '../images/logoOnHover.png'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
 
@@ -17,10 +18,15 @@ export const NavBar = () => {
 
     return(
         <div className='navbar-container'>
-            <img className='logo' src={logo} alt="" onMouseEnter={changeLogoColour} onMouseLeave={changeLogoColour} />
+        <div className='grain'></div>
+
+            <Link to="/">
+                <img className='logo' src={logo} alt="" onMouseEnter={changeLogoColour} onMouseLeave={changeLogoColour} />
+            </Link>
             <div className='links'>
                 <ul>
-                    <li>About Me</li>
+                    <Link to='/about-me'> <li>About Me</li> </Link>
+                    
                     <li>Projects</li>
                     <li>Blog</li>
                     <li>Contact</li>

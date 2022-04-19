@@ -1,0 +1,129 @@
+@import './general.scss';
+
+.about-me {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    align-items:stretch;
+    align-content:stretch;
+
+    padding: 0 5% 5% 5%;
+
+    .pfp-section {
+        img {
+            max-width: 300px;
+            border-radius: 50%;
+        }
+    }
+
+    .info-section {
+        flex-basis:50%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+
+        h2 {
+            line-height: 2;
+        }
+
+        h2.last-info {
+            padding-bottom: 30px;
+        }
+
+        .about-me-buttons {
+
+            button {
+                margin: 0 30px;
+                font-family: 'Source Code Pro', monospace;
+                line-height: 1.5;
+                font-size: 20px;
+                padding: 10px 20px;
+                color: white;
+                background-color: #333;
+                border: none;
+                -webkit-box-shadow: 0 5px grey, -5px 5px grey;
+                -moz-box-shadow: 0 5px grey, -5px 5px grey;
+                box-shadow: 0 5px grey, -5px 5px grey;
+    
+                &:hover {
+                    background-color: $font-highlight;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+.pre-coding {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    
+    .title {
+        align-self: center;
+        padding-bottom: 5%;
+        button {
+            margin: 0 30px;
+            font-family: 'Source Code Pro', monospace;
+            line-height: 1.5;
+            font-size: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #333;
+            border: none;
+            -webkit-box-shadow: 0 5px grey, -5px 5px grey;
+            -moz-box-shadow: 0 5px grey, -5px 5px grey;
+            box-shadow: 0 5px grey, -5px 5px grey;
+        }
+    }
+
+    .tldr {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content:flex-start;
+        align-items:stretch;
+        align-content:stretch;
+        margin-bottom: 5%;
+    
+        h1 {
+            padding-right: 20px;
+            font-weight: 800;
+        }
+    
+        p span {
+            color: $font-highlight;
+        }
+    }
+
+    .experience {
+
+        background-color: rgba(250,250,250, 0.2);
+        padding: 20px;
+        margin-bottom: 5%;
+
+        img {
+            max-width: 100px;
+        }
+
+        h1, h2 {
+            line-height: 2;
+            font-weight: 600;
+        }
+
+        span {
+            color: $font-highlight;
+        }
+
+    }
+    hr {
+        color: rgba(0,0,0,0);
+        border-top: white 3px dashed;
+        width: 30%;
+        margin-left: 0px;
+        border-bottom: none;
+    }
+}

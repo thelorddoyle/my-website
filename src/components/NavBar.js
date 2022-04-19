@@ -16,9 +16,11 @@ export const NavBar = () => {
         }
     }
 
+
+
     return(
         <div className='navbar-container'>
-        <div className='grain'></div>
+            <div className='grain'></div>
 
             <Link to="/">
                 <img className='logo' src={logo} alt="" onMouseEnter={changeLogoColour} onMouseLeave={changeLogoColour} />

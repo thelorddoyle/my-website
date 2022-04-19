@@ -69,3 +69,13 @@ body {
     background-size: auto;
     opacity: 0.02;
     }
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}

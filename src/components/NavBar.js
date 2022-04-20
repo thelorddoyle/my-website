@@ -2,7 +2,7 @@ import '../styles/navbar.scss';
 import logoWhite from '../images/DLlogo.png'
 import logoGreen from '../images/logoOnHover.png'
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export const NavBar = () => {
 
@@ -41,9 +41,9 @@ export const NavBar = () => {
             </Link>
             <div className='links'>
                 <ul>
-                    <Link to='/about-me'><li>About Me</li></Link>
-                    <Link to="/projects"><li>Projects</li></Link>
-                    <Link to="/blog"><li>Blog</li></Link>
+                    <NavLink activeClassName="active" to='/about-me'><li>About Me</li></NavLink>
+                    <NavLink to="/projects"><li>Projects</li></NavLink>
+                    <NavLink to="/blog"><li>Blog</li></NavLink>
                     <li>Contact</li>
                 </ul>
             </div>

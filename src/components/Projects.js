@@ -219,10 +219,6 @@ export const Projects = () => {
     return(
         <div className="projects">
 
-            <div className="title">
-                <button>Projects</button>
-            </div>
-
             <div className='filterByTech'>
                 <h3>Choose a technology:</h3>
                 <ul>

@@ -1,12 +1,20 @@
 import '../styles/navbar.scss';
 import logoWhite from '../images/DLlogo.png'
 import logoGreen from '../images/logoOnHover.png'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
 
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
+
     const [logo, setLogo] = useState(logoWhite)
+    const [navBarClass, setNavBarClass] = useState('navbar-container')
 
     const changeLogoColour = () => {
         if (logo === logoWhite) {
@@ -16,10 +24,16 @@ export const NavBar = () => {
         }
     }
 
-
+    const handleScroll = () => {
+        if (window.scrollY > 0) {
+            setNavBarClass('navbar-container navbar-scrolled')
+        } else {
+            setNavBarClass('navbar-container')
+        }
+    }
 
     return(
-        <div className='navbar-container'>
+        <div className={navBarClass} onClick={handleScroll}>
             <div className='grain'></div>
 
             <Link to="/my-website/">

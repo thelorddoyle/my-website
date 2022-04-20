@@ -9,6 +9,7 @@
     background-color: rgb(31, 31, 31);
     z-index: 10;
     margin-bottom: 3%;
+    transition: padding 0.5s, background-color 0.5s;
 
     .logo {
         max-width: 3rem;
@@ -36,4 +37,10 @@
         }
     }
 
+}
+
+.navbar-scrolled {
+    padding: 1% 5%;
+    background-color: rgb(17, 17, 17);
+    transition: padding 0.5s, background-color 0.5s;
 }

@@ -30,7 +30,7 @@ function App() {
                 key={location.key}>
 
                 <Routes location={location}>
-                    <Route path="/" element={<HomePage/>}/>
+                    <Route path="/my-website/" element={<HomePage/>}/>
                     <Route path="about-me" element={<AboutMe/>} />
                     <Route path="/about-me/before" element={<PreCoding />} />
                     <Route path="/about-me/now" element={<PostCoding />} />

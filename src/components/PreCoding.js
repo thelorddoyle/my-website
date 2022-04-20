@@ -5,6 +5,7 @@ import oaktreeGreen from '../images/oaktree-hovered.png'
 import gradTouchOriginal from '../images/gradtouch.png'
 import gradTouchGreen from '../images/gradtouch-hovered.png'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import '../styles/aboutMe.scss'
 
@@ -40,7 +41,7 @@ export const PreCoding = () => {
 
     const durhamUniExperience = () => {
         return(
-            <div className="experience" onMouseEnter={changeDurham} onMouseLeave={changeDurham}>
+            <div key='durhamUni' className="experience" onMouseEnter={changeDurham} onMouseLeave={changeDurham}>
                 <img src={durham} alt="durham university"/>
                 <h1>Durham University, <span>2007-10</span></h1>
                 <h2>BA, Sociology</h2>
@@ -52,7 +53,7 @@ export const PreCoding = () => {
 
     const oaktreeExperience = () => {
         return(
-            <div className="experience" onMouseEnter={changeOaktree} onMouseLeave={changeOaktree}>
+            <div key='oaktree' className="experience" onMouseEnter={changeOaktree} onMouseLeave={changeOaktree}>
                 <img src={oaktree} alt="oaktree telemarketing"/>
                 <h1>Oaktree, <span>2012-15</span></h1>
                 <h2>Sales Operations Manager</h2>
@@ -64,7 +65,7 @@ export const PreCoding = () => {
 
     const gradTouchExperience = () => {
         return(
-            <div className="experience" onMouseEnter={changeGradTouch} onMouseLeave={changeGradTouch}>
+            <div key='gradtouch' className="experience" onMouseEnter={changeGradTouch} onMouseLeave={changeGradTouch}>
                 <img src={gradtouch} alt="gradtouch"/>
                 <h1>Gradtouch, <span>2015-18</span></h1>
                 <h2>Sales & Marketing Lead</h2>
@@ -88,6 +89,7 @@ export const PreCoding = () => {
 
             <div className="title">
                 <button>Pre-Coding</button>
+                <Link to='/about-me/now'><button className='alternative'>Post-Coding</button></Link>
             </div>
 
             <div className="tldr">
@@ -101,9 +103,9 @@ export const PreCoding = () => {
                     {
                         toggled
                         ?
-                        <button className='toggle' onClick={handleToggle}>Ancient History First</button>
-                        :
                         <button className='toggle' onClick={handleToggle}>Most Recent First</button>
+                        :
+                        <button className='toggle' onClick={handleToggle}>Ancient History First</button>
                     }
                 </div>
             </div>

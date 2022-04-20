@@ -27,9 +27,8 @@ export const NavBar = () => {
             </Link>
             <div className='links'>
                 <ul>
-                    <Link to='/about-me'> <li>About Me</li> </Link>
-                    
-                    <li>Projects</li>
+                    <Link to='/about-me'><li>About Me</li></Link>
+                    <Link to="/projects"><li>Projects</li></Link>
                     <li>Blog</li>
                     <li>Contact</li>
                 </ul>

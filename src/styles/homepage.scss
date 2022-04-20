@@ -41,6 +41,7 @@
 
                 .resume-image {
                     max-width: 75px;
+                    border-radius: 15px;
                 }
             }
 
@@ -67,27 +68,11 @@
             width: auto;
             padding: 1em 1.5em;
             margin: 2em auto;
-            margin-left: 10px;
             color: #333;
             background: white;
             overflow: hidden;
-            box-shadow: grey -10px 10px;
-          }
-          
-          .article:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            border-width: 0 40px 40px 0;
-            border-style: solid;
-            border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) white white;
-            background: url(../images/background.png);
-            -webkit-box-shadow: 0 5px 5px grey, -5px 5px 5px grey;
-            -moz-box-shadow: 0 5px 5px grey, -5px 5px 5px grey;
-            box-shadow: 0 5px 5px grey, -5px 5px 5px grey;
-            /* Firefox 3.0 damage limitation */
-            display: block; width: 0;
+            box-shadow: grey 10px 10px;
+            border-radius: 30px;
           }
 
             .article-header-line {
@@ -134,7 +119,7 @@
             }
 
             .article-button-section {
-                margin: 10px 5px;
+                margin: 10px 0px;
                 button {
                     margin-left: 30px;
                     font-family: 'Source Code Pro', monospace;
@@ -144,9 +129,10 @@
                     color: white;
                     background-color: #333;
                     border: none;
-                    -webkit-box-shadow: 0 5px grey, -5px 5px grey;
-                    -moz-box-shadow: 0 5px grey, -5px 5px grey;
-                    box-shadow: 0 5px grey, -5px 5px grey;
+                    -webkit-box-shadow: 0 5px grey, 5px 5px grey;
+                    -moz-box-shadow: 0 5px grey, 5px 5px grey;
+                    box-shadow: 0 5px grey, 5px 5px grey;
+                    border-radius: 15px;
 
                     &:hover {
                         background-color: $font-highlight;

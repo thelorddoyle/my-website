@@ -5,6 +5,7 @@ import selfieskinGreen from '../images/selfieskin-hovered.png'
 import generalAssemblyOriginal from '../images/generalassembly.png'
 import generalAssemblyGreen from '../images/generalassembly-hovered.png'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import '../styles/aboutMe.scss'
 
@@ -40,7 +41,7 @@ export const PostCoding = () => {
 
     const moonboxExperience = () => {
         return(
-            <div className="experience" onMouseEnter={changeMoonbox} onMouseLeave={changeMoonbox}>
+            <div key='moonbox' className="experience" onMouseEnter={changeMoonbox} onMouseLeave={changeMoonbox}>
                 <img src={moonbox} alt="moonbox"/>
                 <h1>Moonbox, <span>2019-21</span></h1>
                 <h2>Junior Software Engineer</h2>
@@ -52,7 +53,7 @@ export const PostCoding = () => {
 
     const selfieSkinExperience = () => {
         return(
-            <div className="experience" onMouseEnter={changeSelfieskin} onMouseLeave={changeSelfieskin}>
+            <div key='selfieskin' className="experience" onMouseEnter={changeSelfieskin} onMouseLeave={changeSelfieskin}>
                 <img src={selfieskin} alt="selfie skin"/>
                 <h1>Selfie Skin, <span>2019-22</span></h1>
                 <h2>Founder & Web Developer</h2>
@@ -64,7 +65,7 @@ export const PostCoding = () => {
 
     const generalAssemblyExperience = () => {
         return(
-            <div className="experience" onMouseEnter={changeGeneralAssembly} onMouseLeave={changeGeneralAssembly}>
+            <div key='general-assembly' className="experience" onMouseEnter={changeGeneralAssembly} onMouseLeave={changeGeneralAssembly}>
                 <img src={generalAssembly} alt="general assembly"/>
                 <h1>General Assembly, <span>2021-22</span></h1>
                 <h2>Software Engineering Immersive</h2>
@@ -87,6 +88,7 @@ export const PostCoding = () => {
         <div className='pre-coding'>
 
             <div className="title">
+                <Link to='/about-me/before'><button className='alternative'>Pre-Coding</button></Link>
                 <button>Post-Coding</button>
             </div>
 
@@ -101,9 +103,9 @@ export const PostCoding = () => {
                     {
                         toggled
                         ?
-                        <button className='toggle' onClick={handleToggle}>Ancient History First</button>
-                        :
                         <button className='toggle' onClick={handleToggle}>Most Recent First</button>
+                        :
+                        <button className='toggle' onClick={handleToggle}>Ancient History First</button>
                     }
                 </div>
             </div>

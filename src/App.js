@@ -6,11 +6,11 @@ import { AboutMe } from './components/AboutMe';
 import { Footer } from './components/Footer'
 import { PreCoding } from './components/PreCoding'
 import { PostCoding } from './components/PostCoding';
+import { Projects } from './components/Projects';
 
 import {TransitionGroup, CSSTransition} from 'react-transition-group'
 
 import {
-    BrowserRouter as Router,
     Routes,
     Route,
     useLocation
@@ -34,6 +34,7 @@ function App() {
                     <Route path="about-me" element={<AboutMe/>} />
                     <Route path="/about-me/before" element={<PreCoding />} />
                     <Route path="/about-me/now" element={<PostCoding />} />
+                    <Route path="/projects" element={<Projects />} />
                 </Routes>
 
             </CSSTransition>

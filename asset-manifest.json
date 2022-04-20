@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/my-website/static/css/main.7c56ca03.css",
-    "main.js": "/my-website/static/js/main.41be8a3a.js",
+    "main.js": "/my-website/static/js/main.fb2683b3.js",
     "static/media/cryptome.png": "/my-website/static/media/cryptome.ef0f4e99bbe6d0499263.png",
     "static/media/noise.gif": "/my-website/static/media/noise.8a286ee883c91cbc7452.gif",
     "static/media/project-unleashed.png": "/my-website/static/media/project-unleashed.201914725de9b97c3217.png",
     "static/media/project-MFC.png": "/my-website/static/media/project-MFC.4dbddd452203ab892002.png",
     "static/media/project-MFCv1.png": "/my-website/static/media/project-MFCv1.1de61ff221aaa0df9cdd.png",
     "static/media/pragmatic.jpg": "/my-website/static/media/pragmatic.e19bf95466f4ad1e0897.jpg",
+    "static/media/tictaczodiak.png": "/my-website/static/media/tictaczodiak.b05f46dd279fd933fd5c.png",
     "static/media/project-covidKiller.png": "/my-website/static/media/project-covidKiller.daa021d2741325aeb464.png",
     "static/media/moonbox-hovered.png": "/my-website/static/media/moonbox-hovered.f55c3ca187f2b0ba8d5d.png",
     "static/media/moonbox.png": "/my-website/static/media/moonbox.f2e05618d220722031fe.png",
@@ -33,10 +34,10 @@
     "static/media/email-hover.png": "/my-website/static/media/email-hover.160ba4d5b73bd11be757.png",
     "index.html": "/my-website/index.html",
     "main.7c56ca03.css.map": "/my-website/static/css/main.7c56ca03.css.map",
-    "main.41be8a3a.js.map": "/my-website/static/js/main.41be8a3a.js.map"
+    "main.fb2683b3.js.map": "/my-website/static/js/main.fb2683b3.js.map"
   },
   "entrypoints": [
     "static/css/main.7c56ca03.css",
-    "static/js/main.41be8a3a.js"
+    "static/js/main.fb2683b3.js"
   ]
 }

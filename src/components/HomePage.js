@@ -9,7 +9,7 @@ export const HomePage = () => {
 
             <div className="tldr">
                 <h1>tl;dr</h1>
-                <p>My name is Daniel Lord-Doyle. I am a software engineer based in Sydney who is Web3-obsessed. My biggest interests are (1) the benefits of <span>decentralisation</span>, (2) how <span>cryptocurrency and blockchain</span> can change the world and (3) in-game <span>economics & incentive</span> systems.</p>
+                <p>My name is Daniel Lord-Doyle. I am a junior software engineer based in Sydney. I am always trying to learn more about (1) how <span>cryptocurrency and blockchain</span> can impact the world, (2) the benefits of <span>decentralisation</span> and (3) everything about in-game <span>NFTs, economics & incentive</span> systems.</p>
             </div>
 
             <div className='latest-articles'>

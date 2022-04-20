@@ -52,7 +52,7 @@ export const Projects = () => {
                         <hr className='project-line'/>
                         <p>Front end user account form to practice TDD and React. Custom date picker and drag-and-drop image upload. 11 test suites and 49 tests throught React Testing Library.</p>
                         <div className='project-buttons'>
-                            <a href=""><button>Website</button></a>
+                            <a href="https://thelorddoyle.github.io/virtually-human-form/"><button>Website</button></a>
                             <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/virtually-human-form"><button>Repo</button></a>
                         </div>
                     </div>
@@ -118,8 +118,8 @@ export const Projects = () => {
                         <hr className='project-line'/>
                         <p>Two-sided app where users can join as an Owner or a Walker. An owner can register new pets, edit their current pets and post a walk. Walkers can see these 'walks' that appear in their local area and accept the job. The walker is then guided to their location by the app, and once they have confirmed receipt of the owners pet the owner can watch in real-time as their beloved pet is walked the designated amount of time. The owner can then rate the quality of the walker.</p>
                         <div className='project-buttons'>
-                            <a target='_blank' rel='noreferrer' href=""><button>Website</button></a>
-                            <a target='_blank' rel='noreferrer' href=""><button>Repo</button></a>
+                            <a target='_blank' rel='noreferrer' href="https://unleashed-client.netlify.app/"><button>Website</button></a>
+                            <a target='_blank' rel='noreferrer' href="https://github.com/Jesus-fhz/unleashed-client"><button>Repo</button></a>
                         </div>
                     </div>
                 </div>
@@ -178,9 +178,11 @@ export const Projects = () => {
         let filtered = Object.entries(projects).filter(([key, value]) => {
             if (value.languages.includes(choice)) {
                 return key
-            } 
+            } else {
+                return null
+            }
         })
-        const requiredJSX = filtered.map(([key, value]) => {
+        const requiredJSX = filtered.map(([_, value]) => {
             return value.jsx
         })
 

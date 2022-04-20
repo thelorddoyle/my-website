@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/virtually-human-form/static/css/main.cb4c7bed.css",
+    "main.js": "/virtually-human-form/static/js/main.bf265ebb.js",
+    "static/media/cryptome.png": "/virtually-human-form/static/media/cryptome.ef0f4e99bbe6d0499263.png",
+    "static/media/noise.gif": "/virtually-human-form/static/media/noise.8a286ee883c91cbc7452.gif",
+    "static/media/project-unleashed.png": "/virtually-human-form/static/media/project-unleashed.201914725de9b97c3217.png",
+    "static/media/project-MFC.png": "/virtually-human-form/static/media/project-MFC.4dbddd452203ab892002.png",
+    "static/media/project-MFCv1.png": "/virtually-human-form/static/media/project-MFCv1.1de61ff221aaa0df9cdd.png",
+    "static/media/pragmatic.jpg": "/virtually-human-form/static/media/pragmatic.e19bf95466f4ad1e0897.jpg",
+    "static/media/project-covidKiller.png": "/virtually-human-form/static/media/project-covidKiller.daa021d2741325aeb464.png",
+    "static/media/moonbox-hovered.png": "/virtually-human-form/static/media/moonbox-hovered.f55c3ca187f2b0ba8d5d.png",
+    "static/media/moonbox.png": "/virtually-human-form/static/media/moonbox.f2e05618d220722031fe.png",
+    "static/media/graphql.jpg": "/virtually-human-form/static/media/graphql.e150349ee9ed0c7a207c.jpg",
+    "static/media/virtually-human.png": "/virtually-human-form/static/media/virtually-human.9efa6dde79311fccd2c3.png",
+    "static/media/gradtouch.png": "/virtually-human-form/static/media/gradtouch.0064071fc22a09dfc67c.png",
+    "static/media/durham-hovered.png": "/virtually-human-form/static/media/durham-hovered.37075c1999b02861227d.png",
+    "static/media/durham.png": "/virtually-human-form/static/media/durham.fb7ddd1683a6f8a4e4b7.png",
+    "static/media/oaktree.png": "/virtually-human-form/static/media/oaktree.956d517e6342deff1a25.png",
+    "static/media/gradtouch-hovered.png": "/virtually-human-form/static/media/gradtouch-hovered.11a8a84dddee6fb283c7.png",
+    "static/media/oaktree-hovered.png": "/virtually-human-form/static/media/oaktree-hovered.db480e440dc5ed00dc36.png",
+    "static/media/generalassembly.png": "/virtually-human-form/static/media/generalassembly.5906b3492ecda32bd40e.png",
+    "static/media/generalassembly-hovered.png": "/virtually-human-form/static/media/generalassembly-hovered.d5b6c64b6c6f5f1d0d32.png",
+    "static/media/selfieskin.png": "/virtually-human-form/static/media/selfieskin.e5316adc88fa03548df3.png",
+    "static/media/selfieskin-hovered.png": "/virtually-human-form/static/media/selfieskin-hovered.e270d2f2a3446dae9e2a.png",
+    "static/media/logoOnHover.png": "/virtually-human-form/static/media/logoOnHover.f255d0c73cea515a76f8.png",
+    "static/media/DLlogo.png": "/virtually-human-form/static/media/DLlogo.25779043f7ab84df69b9.png",
+    "static/media/github-hover.png": "/virtually-human-form/static/media/github-hover.9d956027f02bed9c097c.png",
+    "static/media/twitter-hover.png": "/virtually-human-form/static/media/twitter-hover.ed12736f3ed49b25ed59.png",
+    "static/media/github.png": "/virtually-human-form/static/media/github.6b72d62782d1d1abdc1c.png",
+    "static/media/twitter.png": "/virtually-human-form/static/media/twitter.62e4f10edfbe89875203.png",
+    "static/media/linkedin-hover.png": "/virtually-human-form/static/media/linkedin-hover.8a305c693000e06f7462.png",
+    "static/media/email-hover.png": "/virtually-human-form/static/media/email-hover.160ba4d5b73bd11be757.png",
+    "index.html": "/virtually-human-form/index.html",
+    "main.cb4c7bed.css.map": "/virtually-human-form/static/css/main.cb4c7bed.css.map",
+    "main.bf265ebb.js.map": "/virtually-human-form/static/js/main.bf265ebb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb4c7bed.css",
+    "static/js/main.bf265ebb.js"
+  ]
+}

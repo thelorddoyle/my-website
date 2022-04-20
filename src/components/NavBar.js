@@ -41,9 +41,9 @@ export const NavBar = () => {
             </Link>
             <div className='links'>
                 <ul>
-                    <NavLink activeClassName="active" to='/about-me'><li>About Me</li></NavLink>
-                    <NavLink to="/projects"><li>Projects</li></NavLink>
-                    <NavLink to="/blog"><li>Blog</li></NavLink>
+                    <NavLink className={(navData) => (navData.isActive ? "active" : null)} to='/about-me'><li>About Me</li></NavLink>
+                    <NavLink className={(navData) => (navData.isActive ? "active" : null)} to="/projects"><li>Projects</li></NavLink>
+                    <NavLink className={(navData) => (navData.isActive ? "active" : null)} to="/blog"><li>Blog</li></NavLink>
                     <li>Contact</li>
                 </ul>
             </div>

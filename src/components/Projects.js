@@ -37,7 +37,7 @@ export const Projects = () => {
         setCurrentTech(false)
         setChosen([])
         setNotChosen(['React JS', 'JavaScript', 'TypeScript', 'Node.js', 'GraphQL', 'XState', 'MongoDB', 'Express', 'Ruby on Rails']);
-        setProjectsToShow([accountFormProject(), mfc2Project(), mfc1Project(), unleashedProject(), covidKillerProject(), ticTacZodiacProject()])
+        setProjectsToShow([accountFormProject(), mfc2Project(), unleashedProject(), mfc1Project(), covidKillerProject(), ticTacZodiacProject()])
     }
 
     const accountFormProject = () => {
@@ -49,11 +49,12 @@ export const Projects = () => {
                 <div className='project-description'>
                     <div>
                         <h1>User Account Form - With Custom Date Picker & Image Drag-and-Drop</h1>
-                        <h2>Technologies used: <span>React JS</span>, <span>JavaScript</span>, <span>React Testing Library</span>, <span>CSS</span></h2>
+                        <h2>Languages used: <span>JavaScript</span>, <span>CSS</span>, <span>HTML</span></h2>
+                        <h2>Frameworks used: <span>React JS</span>, <span>React Testing Library</span></h2>
                         <hr className='project-line'/>
                         <p>Front end user account form to practice TDD and React. Custom date picker and drag-and-drop image upload. 11 test suites and 49 tests throught React Testing Library.</p>
                         <div className='project-buttons'>
-                            <a href="https://thelorddoyle.github.io/virtually-human-form/"><button>Website</button></a>
+                            <a target='_blank' rel='noreferrer' href="https://thelorddoyle.github.io/virtually-human-form/"><button>Website</button></a>
                             <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/virtually-human-form"><button>Repo</button></a>
                         </div>
                     </div>
@@ -71,7 +72,9 @@ export const Projects = () => {
                 <div className='project-description'>
                     <div>
                         <h1>MFC v2.0 - NFT game inspired by MMA sports</h1>
-                        <h2>Technologies used: <span>React JS</span>, <span>TypeScript</span>, <span>GraphQL</span>, <span>JavaScript</span>, <span>XState</span>, <span>SASS</span></h2>
+                        <h2>Languages used: <span>TypeScript</span>, <span>JavaScript</span>, <span>CSS</span>, <span>HTML</span></h2>
+                        <h2>Frameworks used: <span>React JS</span>, <span>GraphQL</span>, <span>Express</span>, <span>Node.js</span>, <span>XState</span>, <span>SASS</span></h2>
+                        <h2>Database used: <span>MongoDB</span></h2>
                         <hr className='project-line'/>
                         <p>Front & back-end MERN application that allows users to purchase NFTs, and compete in multiplayer tournaments earning Ethereum prizes.</p>
                         <div className='project-buttons'>
@@ -93,7 +96,9 @@ export const Projects = () => {
                 <div className='project-description'>
                     <div>
                         <h1>MFC v1.0 - NFT game inspired by MMA sports</h1>
-                        <h2>Technologies used: <span>Ruby on Rails</span>, <span>SQL</span>, <span>JavaScript</span>, <span>SASS</span></h2>
+                        <h2>Languages used: <span>Ruby</span>, <span>JavaScript</span>, <span>CSS</span>, <span>HTML</span></h2>
+                        <h2>Frameworks used: <span>Ruby on Rails</span>, <span>JavaScript</span>, <span>jQuery</span></h2>
+                        <h2>Database used: <span>PostgreSQL</span></h2>
                         <hr className='project-line'/>
                         <p>Full stack Ruby on Rails application that authenticates users, allows them  to mint NFTs, and compete in a range of multiplayer tournaments earning Ethereum prizes.</p>
                         <div className='project-buttons'>
@@ -115,7 +120,9 @@ export const Projects = () => {
                 <div className='project-description'>
                     <div>
                         <h1>Unleashed - Uber-esque Dog-Walking App</h1>
-                        <h2>Technologies used: <span>Google Maps API</span>, <span>JavaScript</span>, <span>React JS</span>, <span>SASS</span>, <span>Ruby on Rails (back-end)</span></h2>
+                        <h2>Languages used: <span>JavaScript</span>, <span>CSS</span>, <span>Ruby</span>, <span>HTML</span></h2>
+                        <h2>Frameworks used: <span>React JS</span>, <span>Google Maps API</span>, <span>SASS</span>, <span>Ruby on Rails</span></h2>
+                        <h2>Database used: <span>PostgreSQL</span></h2>
                         <hr className='project-line'/>
                         <p>Two-sided app where users can join as an Owner or a Walker. An owner can register new pets, edit their current pets and post a walk. Walkers can see these 'walks' that appear in their local area and accept the job. The walker is then guided to their location by the app, and once they have confirmed receipt of the owners pet the owner can watch in real-time as their beloved pet is walked the designated amount of time. The owner can then rate the quality of the walker.</p>
                         <div className='project-buttons'>
@@ -163,8 +170,8 @@ export const Projects = () => {
                         <hr className='project-line'/>
                         <p>This was my first ever true coding project. A simple tic-tac-toe game, I spiced it up by adding in a small user data collection of their names and birthdays. Geared towards being played with a romantic partner, after 3 games the mystical super-algorithm (not really!) in the background will help you determine if you will are astronomically aligned with each other. Some small highlights: date validation, name validation, some nice CSS and jQuery effects.</p>
                         <div className='project-buttons'>
-                            <a target='_blank' rel='noreferrer' href="https://thelorddoyle.github.io/covid-killer/"><button>Website</button></a>
-                            <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/covid-killer"><button>Repo</button></a>
+                            <a target='_blank' rel='noreferrer' href="https://thelorddoyle.github.io/tic-tac-toe/"><button>Website</button></a>
+                            <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/tic-tac-toe"><button>Repo</button></a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +206,7 @@ export const Projects = () => {
         }
     }
 
-    const [projectsToShow, setProjectsToShow] = useState([accountFormProject(), mfc2Project(), mfc1Project(), unleashedProject(), covidKillerProject(), ticTacZodiacProject()])
+    const [projectsToShow, setProjectsToShow] = useState([accountFormProject(), mfc2Project(), unleashedProject(), mfc1Project(), covidKillerProject(), ticTacZodiacProject()])
 
     const projectFilter = (choice) => {
         let filtered = Object.entries(projects).filter(([key, value]) => {

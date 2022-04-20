@@ -6,7 +6,8 @@ import MFCPreview from '../images/project-MFC.png'
 import MFCv1Preview from '../images/project-MFCv1.png'
 import UnleashedPreview from '../images/project-unleashed.png'
 import CovidKillerPreview from '../images/project-covidKiller.png'
-import ReactForm from '../images/virtually-human.png'
+import ReactFormPreview from '../images/virtually-human.png'
+import TicTacZodiakPreview from '../images/tictaczodiak.png'
 
 export const Projects = () => {
 
@@ -36,14 +37,14 @@ export const Projects = () => {
         setCurrentTech(false)
         setChosen([])
         setNotChosen(['React JS', 'JavaScript', 'TypeScript', 'Node.js', 'GraphQL', 'XState', 'MongoDB', 'Express', 'Ruby on Rails']);
-        setProjectsToShow([accountFormProject(), mfc2Project(), mfc1Project(), unleashedProject(), covidKillerProject()])
+        setProjectsToShow([accountFormProject(), mfc2Project(), mfc1Project(), unleashedProject(), covidKillerProject(), ticTacZodiacProject()])
     }
 
     const accountFormProject = () => {
         return(
             <div key='account-form' className='project-container'>
                 <div className='image'>
-                    <img src={ReactForm} alt="react form project" />
+                    <img src={ReactFormPreview} alt="react form project" />
                 </div>
                 <div className='project-description'>
                     <div>
@@ -149,6 +150,28 @@ export const Projects = () => {
         )
     }
 
+    const ticTacZodiacProject = () => {
+        return(
+            <div key='tictaczodiac' className='project-container'>
+                <div className='image'>
+                    <img src={TicTacZodiakPreview} alt="tic tac zodiac project" />
+                </div>
+                <div className='project-description'>
+                    <div>
+                        <h1>Tic Tac Zodiac - My first ever project!</h1>
+                        <h2>Technologies used: <span>JavaScript</span>, <span>HTML</span>, <span>CSS</span></h2>
+                        <hr className='project-line'/>
+                        <p>This was my first ever true coding project. A simple tic-tac-toe game, I spiced it up by adding in a small user data collection of their names and birthdays. Geared towards being played with a romantic partner, after 3 games the mystical super-algorithm (not really!) in the background will help you determine if you will are astronomically aligned with each other. Some small highlights: date validation, name validation, some nice CSS and jQuery effects.</p>
+                        <div className='project-buttons'>
+                            <a target='_blank' rel='noreferrer' href="https://thelorddoyle.github.io/covid-killer/"><button>Website</button></a>
+                            <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/covid-killer"><button>Repo</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
     const projects = {
         accountForm: {
             languages: ['React JS', 'JavaScript', 'React Testing Library', 'CSS'],
@@ -169,10 +192,14 @@ export const Projects = () => {
         covidKiller: {
             languages: ['JavaScript', 'CSS', 'HTML'],
             jsx: covidKillerProject()
+        },
+        ticTacZodiac: {
+            languages: ['JavaScript', 'CSS', 'HTML'],
+            jsx: ticTacZodiacProject()
         }
     }
 
-    const [projectsToShow, setProjectsToShow] = useState([accountFormProject(), mfc2Project(), mfc1Project(), unleashedProject(), covidKillerProject()])
+    const [projectsToShow, setProjectsToShow] = useState([accountFormProject(), mfc2Project(), mfc1Project(), unleashedProject(), covidKillerProject(), ticTacZodiacProject()])
 
     const projectFilter = (choice) => {
         let filtered = Object.entries(projects).filter(([key, value]) => {

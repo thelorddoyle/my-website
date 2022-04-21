@@ -21,7 +21,7 @@ export const Blog = () => {
                     <div className='article-header-line'>
                         <h1>Top 5 Lessons from Reading 'The Pragmatic Programmer'</h1>
                         <span className='green-dot'></span>
-                        <p>Category: 📚 Books</p>
+                        <p>📚 Books</p>
                     </div>
                     <div className='article-description'>
                         <img src={pragamticProgrammer} alt="" />
@@ -40,7 +40,7 @@ export const Blog = () => {
                     <div className='article-header-line'>
                         <h1>How To Get Started With GraphQL</h1>
                         <span className='green-dot'></span>
-                        <p>Category: 📝 Dan's Docs</p>
+                        <p>📝 Dan's Docs</p>
                     </div>
                     <div className='article-description'>
                         <img src={graphQL} alt="" />

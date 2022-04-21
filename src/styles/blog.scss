@@ -48,6 +48,7 @@
 
         h1 {
             font-weight: 800;
+            padding-bottom: 20px;
         }
         
         .article {
@@ -65,7 +66,6 @@
             .article-header-line {
                 display: flex;
                 flex-direction: row;
-                margin-bottom: 20px;
 
                 .green-dot {
                     height: 10px;
@@ -77,6 +77,10 @@
                     border-radius: 50%;
                     display: inline-block;
                   }
+
+                p {
+                      font-weight: 800;
+                  }
             }
 
             .article-description {
@@ -87,10 +91,14 @@
                     max-width: 300px;
                     margin-bottom: 10px;
                     align-self: flex-start;
+                    border-radius: 15px;
                 }
 
                 p {
                     padding-left: 30px;
+                    line-height: 1.5;
+                    font-size: 18px;
+                    margin-bottom: 20px;
                 }
             }
 

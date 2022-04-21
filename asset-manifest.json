@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.a9a13694.css",
-    "main.js": "/my-website/static/js/main.43cfef54.js",
+    "main.css": "/my-website/static/css/main.dd56ed5b.css",
+    "main.js": "/my-website/static/js/main.fd80f6c8.js",
     "static/media/cryptome.png": "/my-website/static/media/cryptome.ef0f4e99bbe6d0499263.png",
     "static/media/noise.gif": "/my-website/static/media/noise.8a286ee883c91cbc7452.gif",
     "static/media/project-unleashed.png": "/my-website/static/media/project-unleashed.201914725de9b97c3217.png",
@@ -36,11 +36,11 @@
     "static/media/email-hover.png": "/my-website/static/media/email-hover.160ba4d5b73bd11be757.png",
     "static/media/css-logo.png": "/my-website/static/media/css-logo.c283a25e1d30e5699b22.png",
     "index.html": "/my-website/index.html",
-    "main.a9a13694.css.map": "/my-website/static/css/main.a9a13694.css.map",
-    "main.43cfef54.js.map": "/my-website/static/js/main.43cfef54.js.map"
+    "main.dd56ed5b.css.map": "/my-website/static/css/main.dd56ed5b.css.map",
+    "main.fd80f6c8.js.map": "/my-website/static/js/main.fd80f6c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9a13694.css",
-    "static/js/main.43cfef54.js"
+    "static/css/main.dd56ed5b.css",
+    "static/js/main.fd80f6c8.js"
   ]
 }

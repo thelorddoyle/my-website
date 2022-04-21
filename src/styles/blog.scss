@@ -1,41 +1,61 @@
 @import './general.scss';
 
-.home-page-container {
+.blog {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
 
-    padding: 3% 5% 3% 5%;
+    padding: 0% 5% 0% 5%;
 
-    .tldr {
-        display:flex;
-        flex-direction:row;
-        flex-wrap:nowrap;
-        justify-content:flex-start;
-        align-items:stretch;
-        align-content:stretch;
-    
-        h1 {
-            padding-right: 20px;
-            font-weight: 800;
+    .filterByCategory {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+
+        h3 {
+            margin-right: 20px;
+            align-self: center;
         }
-    
-        p span {
-            color: $font-highlight;
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            .chosen {
+                background-color: $font-highlight;
+            }
+            li {
+                background-color: #333;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 20px;
+                padding: 5px 15px;
+                -webkit-box-shadow: 0 0px grey, 2.5px 2.5px grey;
+                -moz-box-shadow: 0 0px grey, 2.5px 2.5px grey;
+                box-shadow: 0 0px grey, 2.5px 2.5px grey;
+                border-radius: 15px;
+                &:hover {
+                    background-color: $font-highlight;
+                    cursor: pointer;
+                }
+                
+            }
         }
     }
 
-    .latest-articles {
-        padding-top: 3%;
+    .articles {
 
         h1 {
             font-weight: 800;
-            padding-bottom: 20px;
         }
         
         .article {
             position: relative;
             width: auto;
             padding: 1em 1.5em;
-            margin-bottom: 4%;
             color: #333;
+            margin-bottom: 4%;
             background: white;
             overflow: hidden;
             box-shadow: grey 10px 10px;
@@ -96,39 +116,5 @@
                     }
                 }
             }
-    }
-
-    .quick-links {
-
-        h1 {
-            font-weight: 800;
-            padding-bottom: 20px;
-        }
-
-        .quick-links-bar {
-            display: flex;
-            flex-direction: row;
-
-            .quick-links-resume {
-                display: flex;
-                flex-direction: column;
-                padding-right: 20px;
-
-                .resume-image {
-                    max-width: 75px;
-                    border-radius: 15px;
-                    margin-bottom: 15px;
-                }
-            }
-
-            a {
-                color: $font-colour-main;
-
-                &:hover {
-                    color: $font-highlight;
-                    cursor: pointer;
-                }
-            }
-        }
     }
 }

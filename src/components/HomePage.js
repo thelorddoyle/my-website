@@ -1,7 +1,7 @@
 import '../styles/homepage.scss'
 import quickLinkResume from '../images/quickLinkResume.png'
-import pragamticProgrammer from '../images/pragmatic.jpg'
-import graphQL from '../images/graphql.jpg'
+import solidityPart1 from '../images/solidity-part-1.png'
+import myYouteach from '../images/my-youteach.png'
 
 export const HomePage = () => {
     return(
@@ -12,16 +12,16 @@ export const HomePage = () => {
                 <p>My name is Daniel Lord-Doyle. I am a junior software engineer based in Sydney. I am always trying to learn more about (1) how <span>cryptocurrency and blockchain</span> can impact the world, (2) the benefits of <span>decentralisation</span> and (3) everything about in-game <span>NFTs, economics & incentive</span> systems.</p>
             </div>
 
-            <div className='latest-articles'>
-                <h1>Latest Articles</h1>
+            <div className='articles'>
+
                 <div className='article'>
                     <div className='article-header-line'>
-                        <h1>Top 5 Lessons from Reading 'The Pragmatic Programmer'</h1>
+                        <h1>Learning Solidity for Free - Part 1</h1>
                         <span className='green-dot'></span>
-                        <p>📚 Books</p>
+                        <p>🤖 Learning Web3</p>
                     </div>
                     <div className='article-description'>
-                        <img src={pragamticProgrammer} alt="" />
+                        <img src={solidityPart1} alt="" />
                         <div>
                             <p>The book “The Pragmatic Programmer” by David Thomas and Andrew Hunt is one of the “must-read” for a developer. Co-author Andrew Hunt took part in the creation of the Agile Manifesto back in 2001.
                             This book can give you a lot of practical advice on how to write flexible, dynamic, and adaptable software.</p>
@@ -35,12 +35,12 @@ export const HomePage = () => {
 
                 <div className='article'>
                     <div className='article-header-line'>
-                        <h1>How To Get Started With GraphQL</h1>
+                        <h1>My YouTeach Presentation: The History of Money & Cryptocurrency</h1>
                         <span className='green-dot'></span>
-                        <p>📝 Dan's Docs</p>
+                        <p>🔑 Crypto</p>
                     </div>
                     <div className='article-description'>
-                        <img src={graphQL} alt="" />
+                        <img src={myYouteach} alt="" />
                         <div>
                             <p>GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</p>
                             <div className='article-button-section'>

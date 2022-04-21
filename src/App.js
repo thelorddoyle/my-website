@@ -8,6 +8,7 @@ import { PreCoding } from './components/PreCoding'
 import { PostCoding } from './components/PostCoding';
 import { Projects } from './components/Projects';
 import { Blog } from './components/Blog'
+import { Contact } from './components/Contact';
 
 import {TransitionGroup, CSSTransition} from 'react-transition-group'
 
@@ -37,11 +38,12 @@ function App() {
                     <Route path="/about-me/now" element={<PostCoding />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/blog" element={<Blog />}></Route>
+                    <Route path="/contact" element={<Contact />}></Route>
                 </Routes>
 
             </CSSTransition>
         </TransitionGroup>
-        <Footer />
+        {location.pathname !== '/contact' && <Footer /> }
     </div>
   );
 }

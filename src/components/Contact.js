@@ -1,6 +1,7 @@
+import '../styles/contact.scss'
 import { useState } from 'react'
 
-import '../styles/footer.scss'
+import cryptoMe from '../images/cryptome.png'
 
 import emailWhite from '../images/email.png'
 import emailGreen from '../images/email-hover.png'
@@ -11,7 +12,7 @@ import githubGreen from '../images/github-hover.png'
 import twitterWhite from '../images/twitter.png'
 import twitterGreen from '../images/twitter-hover.png'
 
-export const Footer = () => {
+export const Contact = () => {
 
     const [email, setEmail] = useState(emailWhite)
     const [linkedin, setLinkedin] = useState(linkedinWhite)
@@ -51,18 +52,18 @@ export const Footer = () => {
     }
 
     return(
-        <div className="footer-section">
-
-            <hr className='dotted-line'/>
-
-            <h1>How To Contact Me</h1>
+        <div className='contact'>
+            <div className='contact-container'>
+                <div className='pfp-section'>
+                    <img src={cryptoMe} alt="" />
+                </div>
+            </div>
             <div className="socials">
                 <a target='_blank' rel='noreferrer' href="mailto:dlorddoyle@gmail.com"><img src={email} alt="" onMouseEnter={changeEmailColour} onMouseLeave={changeEmailColour}/></a>
                 <a target='_blank' rel='noreferrer' href="https://www.linkedin.com/in/daniel-lord-doyle/"><img src={linkedin} alt="" onMouseEnter={changeLinkedInColour} onMouseLeave={changeLinkedInColour}/></a>
                 <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/"><img src={github} alt="" onMouseEnter={changeGithubColour} onMouseLeave={changeGithubColour}/></a>
                 <a target='_blank' rel='noreferrer' href="https://twitter.com/thelorddoyle"><img src={twitter} alt="" onMouseEnter={changeTwitterColour} onMouseLeave={changeTwitterColour}/></a>
             </div>
-            <h1 className='copyright'>Copyright Daniel Lord-Doyle © 2022</h1>
         </div>
     )
 }

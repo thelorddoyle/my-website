@@ -90,6 +90,7 @@
             p {
                 line-height: 1.5;
                 font-size: 18px;
+
             }
 
             .project-buttons {
@@ -117,4 +118,8 @@
             }
         }
     }
+}
+
+.projects .project-container .project-description p {
+    padding-top: 20px;
 }

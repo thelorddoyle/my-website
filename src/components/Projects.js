@@ -76,7 +76,9 @@ export const Projects = () => {
                         <h2>Frameworks used: <span>React JS</span>, <span>GraphQL</span>, <span>Express</span>, <span>Node.js</span>, <span>XState</span>, <span>SASS</span></h2>
                         <h2>Database used: <span>MongoDB</span></h2>
                         <hr className='project-line'/>
-                        <p>Front & back-end MERN application that allows users to purchase NFTs, and compete in multiplayer tournaments earning Ethereum prizes.</p>
+                        <p>For my final project in General Assembly, I decided to re-make and improve my Metaverse Fighting Championship app. Built with a MERN stack the NFT-game really evolved, added in (1) an XState Random Fight Generator (2) GraphQL (3) TypeScript (5) Game Wiki, (4) User Dashboard and (4) custom art.</p>
+                        <p className='mfc2'>This is a utility-driven, MMA-inspired NFT game. Connect your wallet (register or login), view your profile, mint your first NFT, view your fighters, view your tournaments, watch a fight, view rankings and edit your account.</p>
+                        <h2><span>Username:</span> test <span>Password:</span> password</h2>
                         <div className='project-buttons'>
                             <a target='_blank' rel='noreferrer' href="https://metaverse-fc.netlify.app/"><button>Website</button></a>
                             <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/mfc-front-end"><button>Repo</button></a>
@@ -100,7 +102,8 @@ export const Projects = () => {
                         <h2>Frameworks used: <span>Ruby on Rails</span>, <span>JavaScript</span>, <span>jQuery</span></h2>
                         <h2>Database used: <span>PostgreSQL</span></h2>
                         <hr className='project-line'/>
-                        <p>Full stack Ruby on Rails application that authenticates users, allows them  to mint NFTs, and compete in a range of multiplayer tournaments earning Ethereum prizes.</p>
+                        <p>Metaverse Fighting Championship is an NFT-fighting-game emulator. It is not connected to any smart contracts but allows a player to register/login and authenticates users sessions. Users can add Ethereum to their wallet and mint NFT fighters. Once minted, they can either fight or compete in a tournament. A 'fight' is a 50/50 chance and is represented via text through game commentary. An individual NFT's fight history is stored on their unique page along with other relevant stats. Tournaments can be re-watched on the User Profile or Tournaments Page.</p>
+                        <h2><span>Username:</span> dlorddoyle@gmail.com <span>Password:</span> chicken</h2>
                         <div className='project-buttons'>
                             <a target='_blank' rel='noreferrer' href="https://metaverse-fc.herokuapp.com/"><button>Website</button></a>
                             <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/MFC-v1"><button>Repo</button></a>
@@ -124,7 +127,8 @@ export const Projects = () => {
                         <h2>Frameworks used: <span>React JS</span>, <span>Google Maps API</span>, <span>SASS</span>, <span>Ruby on Rails</span></h2>
                         <h2>Database used: <span>PostgreSQL</span></h2>
                         <hr className='project-line'/>
-                        <p>Two-sided app where users can join as an Owner or a Walker. An owner can register new pets, edit their current pets and post a walk. Walkers can see these 'walks' that appear in their local area and accept the job. The walker is then guided to their location by the app, and once they have confirmed receipt of the owners pet the owner can watch in real-time as their beloved pet is walked the designated amount of time. The owner can then rate the quality of the walker.</p>
+                        <p>2-sided app where users can join as an Owner or a Walker. An owner can register new pets, edit their current pets and post a walk. Walkers can see these 'walks' that appear in their local area and accept the job. The walker is then guided to their location by the app, and once they have confirmed receipt of the owners pet the owner can watch in real-time as their beloved pet is walked the designated amount of time. The owner can then rate the quality of the walker.</p>
+                        <h2><span>Owner:</span> owner@ga.com <span>Walker:</span> walker@ga.com <span>Password:</span> chicken</h2>
                         <div className='project-buttons'>
                             <a target='_blank' rel='noreferrer' href="https://unleashed-client.netlify.app/"><button>Website</button></a>
                             <a target='_blank' rel='noreferrer' href="https://github.com/Jesus-fhz/unleashed-client"><button>Repo</button></a>
@@ -146,7 +150,7 @@ export const Projects = () => {
                         <h1>Covid Killer - Fun, canvas-based shooter</h1>
                         <h2>Technologies used: <span>JavaScript</span>, <span>HTML Canvas</span>, <span>CSS</span></h2>
                         <hr className='project-line'/>
-                        <p>Two-sided app where users can join as an Owner or a Walker. An owner can register new pets, edit their current pets and post a walk. Walkers can see these 'walks' that appear in their local area and accept the job. The walker is then guided to their location by the app, and once they have confirmed receipt of the owners pet the owner can watch in real-time as their beloved pet is walked the designated amount of time. The owner can then rate the quality of the walker.</p>
+                        <p>A small side-project during the General Assembly course, I wanted to play around with the HTML Canvas. Inspired by the arcade space shooters, you use your mouse (or finger on mobile!) to shoot approaching covid molecules that explode in a fun way! Over time, the amount of Covid attackers will increase and you compete for the high score for the longest survival time & covid germs killed!</p>
                         <div className='project-buttons'>
                             <a target='_blank' rel='noreferrer' href="https://thelorddoyle.github.io/covid-killer/"><button>Website</button></a>
                             <a target='_blank' rel='noreferrer' href="https://github.com/thelorddoyle/covid-killer"><button>Repo</button></a>

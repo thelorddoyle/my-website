@@ -51,7 +51,7 @@ export const AboutMe = () => {
 
                 <div className='flex-row-about'>
                     <div className='bottom-section'>
-                        <h2>Languages:</h2>
+                        <h2>Languages</h2>
                         <ul>
                             <li><img className='tech-logo' src={javaScriptLogo} alt="javascript" /><figcaption>JavaScript</figcaption></li>
                             <li><img className='tech-logo' src={typeScriptLogo} alt="typescript" /><figcaption>TypeScript</figcaption></li>
@@ -61,14 +61,14 @@ export const AboutMe = () => {
                         </ul>
                     </div>
                     <div className='bottom-section'>
-                    <h2>Learning:</h2>
+                    <h2>Learning</h2>
                     <ul>
                         <li><img className='tech-logo' src={solidityLogo} alt="" /><figcaption>Solidity</figcaption></li>
                         <li><img className='tech-logo' src={rustLogo} alt="" /><figcaption>Rust</figcaption></li>
                     </ul>
                 </div>
                     <div className='bottom-section'>
-                        <h2>Databases:</h2>
+                        <h2>Databases</h2>
                         <ul>
                             <li><img className='tech-logo' src={mongoDBLogo} alt="" /><figcaption>Mongo DB</figcaption></li>
                             <li><img className='tech-logo' src={postgreSQLLogo} alt="" /><figcaption>PostgreSQL</figcaption></li>
@@ -77,7 +77,7 @@ export const AboutMe = () => {
                 </div>
 
                 <div className='bottom-section'>
-                    <h2>Frameworks:</h2>
+                    <h2>Frameworks</h2>
                     <ul>
                         <li><img className='tech-logo' src={reactLogo} alt="" /><figcaption>React JS</figcaption></li>
                         <li><img className='tech-logo' src={nodeJsLogo} alt="" /><figcaption>Node JS</figcaption></li>

@@ -13,10 +13,7 @@
     .about-me-top {
         display: flex;
         flex-direction:row;
-        flex-wrap:nowrap;
-        justify-content:space-around;
-        align-items:stretch;
-        align-content:stretch;
+        justify-content:center;
     }
 
     .about-me-bottom {

@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
         <NavBar />
+        <div className='app-container'>
         <TransitionGroup>
             <CSSTransition
                 timeout={500}
@@ -43,6 +44,7 @@ function App() {
 
             </CSSTransition>
         </TransitionGroup>
+        </div>
         {location.pathname !== '/contact' && <Footer /> }
     </div>
   );
